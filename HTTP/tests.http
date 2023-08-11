@@ -1,0 +1,35 @@
+POST http://localhost:5000/users
+Content-Type: application/json
+
+{
+  "firstname": "Nemanja",
+  "lastname": "Karaklajic",
+  "age": 32
+}
+
+###
+GET http://localhost:5000/
+Accept: application/json
+
+###
+GET http://localhost:5000/users
+Accept: application/json
+
+###
+GET http://localhost:5000/users/c5f92c14-a4d6-4a80-a359-49ffa0e092a0
+Accept: application/json
+
+###
+DELETE http://localhost:5000/users/
+
+###
+PATCH http://localhost:5000/users/c5f92c14-a4d6-4a80-a359-49ffa0e092a0
+Content-Type: application/json
+
+{
+  "firstname": "Chili",
+  "lastname": "WebDev",
+  "age": 21
+}
+
+###
